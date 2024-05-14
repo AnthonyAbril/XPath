@@ -3,7 +3,7 @@
 <xsl:template match="/">
     <html>
         <body>
-            <xsl:apply-templates select="//ciclo/nombre/text()"/>
+            <xsl:apply-templates select="//ciclo[decretoTitulo/@año&lt;2010]/nombre"/>
         </body>
     </html>
 </xsl:template>
@@ -13,4 +13,5 @@
         <xsl:value-of select="."/>
     </p>
 </xsl:template>
+
 </xsl:stylesheet>

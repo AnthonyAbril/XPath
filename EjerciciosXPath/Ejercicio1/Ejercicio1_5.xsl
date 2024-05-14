@@ -3,12 +3,12 @@
 <xsl:template match="/">
     <html>
         <body>
-            <xsl:apply-templates select="//ciclo/nombre/text()"/>
+            <xsl:apply-templates select="//ciclo/decretoTitulo/@año"/>
         </body>
     </html>
 </xsl:template>
 
-<xsl:template match="nombre">
+<xsl:template match="@año">
     <p>
         <xsl:value-of select="."/>
     </p>
