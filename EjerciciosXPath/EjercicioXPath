@@ -1,0 +1,50 @@
+EJERCICIO XPATH
+
+Ejercicio 1: Expresiones simples
+
+1.1 Nombre del Instituto
+"/ies/nombre"
+
+1.2 Página web del Instituto
+
+1.3 Nombre de los Ciclos Formativos
+
+1.4 Siglas por las que se conocen los Ciclos Formativos
+
+1.5 Años en los que se publicaron los decretos de título de los Ciclos Formativos
+
+1.6 Ciclos Formativos de Grado Medio (se trata de obtener el elemento <ciclo> completo)
+
+1.7 Nombre de los Ciclos Formativos de Grado Superior
+
+1.8 Nombre de los Ciclos Formativos anteriores a 2010
+
+1.9 Nombre de los Ciclos Formativos de 2008 o 2010
+
+
+Ejercicio 2: Expresiones simples
+
+2.1 Nombre de los módulos que se imparten en el Instituto
+
+2.2 Nombre de los módulos del ciclo ASIR
+
+2.3 Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo
+
+2.4 Nombre de los módulos de menos de 5 horas semanales
+
+2.5 Nombre de los módulos que se imparten en el primer curso de ASIR
+
+2.6 Horas semanales de los módulos de más de 3 horas semanales
+
+
+Ejercicio 3: Expresiones anidadas
+
+3.1 Nombre de los módulos del ciclo "Sistemas Microinformáticos y Redes" (en la expresión final no deben aparecer las siglas SMR)
+
+3.2 Nombre de los ciclos que incluyen el módulo "Lenguajes de marcas y sistemas de gestión de información"
+
+3.3 Nombre de los módulos de ciclos de Grado Superior
+
+3.4 Nombre de los módulos de ciclos cuyo título se aprobó en 2008
+
+3.5 Grado de los ciclos con módulos de primer curso
