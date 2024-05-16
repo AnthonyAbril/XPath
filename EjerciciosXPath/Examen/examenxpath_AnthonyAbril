@@ -1,0 +1,20 @@
+- PREGUNTA 1 ¿Qué relaciones tiene Frodo Bolsón?
+
+Respuesta: //personaje[nombre="Frodo Bolsón"]/relaciones
+
+
+- PREGUNTA 2 ¿Quiénes son los aliados de Sauron?
+
+Respuesta: //personaje/relaciones/relacion[tipo="Aliado" and ../../nombre="Sauron"]/nombre
+
+
+- PREGUNTA 3 Descripciones de los personajes cuyos nombres empiecen por “A” (Resuelve en 1 y 2 pasos)
+
+Respuesta en un paso: //personaje/descripcion/text()[starts-with(../../nombre,"A")]
+Respuesta en dos pasos: //personaje[starts-with(nombre,"A")]/descripcion/text()
+
+
+- PREGUNTA 4 Raza de las relaciones de Faramir (Resuelve con expresiones anidadas)
+
+nombre de las relaciones de Faramir: //personaje[nombre="Faramir"]/relaciones/relacion/nombre/text()
+Respuesta: //personaje[nombre=../..//personaje[nombre="Faramir"]/relaciones/relacion/nombre/text()]/raza
