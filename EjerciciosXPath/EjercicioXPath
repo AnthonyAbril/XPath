@@ -74,13 +74,24 @@ Ejercicio 3: Expresiones anidadas
 3.1 Nombre de los módulos del ciclo "Sistemas Microinformáticos y Redes" (en la expresión final no deben aparecer las siglas SMR)
 encontrar las siglas SMR: //ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id
 
-encontrar los modulos del ciclo: //modulo[ciclo=//ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id]/nombre
+encontrar los modulos del ciclo: //modulo[ciclo=//ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id]/nombre/text()
 
 3.2 Nombre de los ciclos que incluyen el módulo "Lenguajes de marcas y sistemas de gestión de información"
+encontrar id de los ciclos que incluyen el modulo: //modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]//ciclo/text()
 
+encontrar los ciclos que incluyen el módulo: //ciclo[@id=../..//modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]//ciclo/text()]/nombre/text()
 
 3.3 Nombre de los módulos de ciclos de Grado Superior
+encontrar el id de los ciclos de Grado Superior: //ciclo[grado="Superior"]/@id
+
+encontrar los módulos de ciclo de grado superior: //modulo[ciclo=../..//ciclo[grado="Superior"]/@id]/nombre/text()
 
 3.4 Nombre de los módulos de ciclos cuyo título se aprobó en 2008
+encontrar el id de los ciclos cuyo título se aprobó en 2008: //ciclo[decretoTitulo/@año=2008]/@id
+
+encontrar los módulos de ciclos cuyo título se aprobó en 2008: //modulo[ciclo=../..//ciclo[decretoTitulo/@año=2008]/@id]/nombre/text()
 
 3.5 Grado de los ciclos con módulos de primer curso
+encontrar el id de módulos de primer curso: //modulo[curso=1]/ciclo/text()
+
+encontrar Grado de los ciclos con módulos de primer curso: //ciclo[@id=../..//modulo[curso=1]/ciclo/text()]/grado/text()
